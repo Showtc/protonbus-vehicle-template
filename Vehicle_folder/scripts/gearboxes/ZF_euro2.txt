@@ -1,0 +1,121 @@
+#########################################
+######## ENGINE CONFIGURATION
+#########################################
+
+[speed_limit]
+use_limit=1
+max_speed=80
+
+[engine]
+idle_rpm=600
+idle_rpm_torque=400
+idle_rpm_curve_bias=0.0
+peak_rpm=1400
+peak_rpm_torque=700
+peak_rpm_curve_bias=0.0
+max_rpm=2300
+inertia=3
+friction_torque=50
+rotational_friction=0.67
+viscous_friction=0.05
+;Idle control: 0 = passive, 1 = active
+idle_control=1
+max_idle_throttle=1
+can_stall=1
+stall_sensitivity=0.301
+stalled_friction_torque=1000
+starter_effectiveness=1
+max_fuel_per_rev=0.7
+
+#########################################
+######## GEARBOX CONFIGURATION
+#########################################
+
+
+[clutch_torque_converter]
+lock_rpm=2000
+lock_ratio_bias=0.75
+
+[automatic_gearbox]
+num_forward_ratios=5
+fwd_ratio_1=3.430
+fwd_ratio_2=2.010
+fwd_ratio_3=1.420
+fwd_ratio_4=1.000
+fwd_ratio_5=0.830
+reverse_ratio=-4.840
+gear_change_time=0.7
+gear_transition_time=0.72
+gear_up_rpm=1550
+gear_down_rpm=750
+start_gear=1
+next_gear_min_speed=3
+strict_park_mode=1
+
+#########################################
+######## DIFFERENTIAL CONFIGURATION
+#########################################
+
+[differential]
+gearRatio=6.200
+
+type=viscous
+#opcoes: open locked viscous clutch_pack torque_bias
+
+## opcoes para viscous
+preload=100
+powerStiffness=0.2
+coastStiffness=0.2
+
+## opcoes para clutch_pack
+clutchPreload=50
+clutchPackFriction=0.4
+powerAngle=45
+coastAngle=80
+
+## opcoes para torque_bias
+torquePreload=0
+powerRatio=5
+coastRatio=5
+
+#########################################
+######## STEERING CONFIGURATION
+#########################################
+
+[steering]
+max_steer_angle=47
+toe_angle=0
+;Ackerman: 0 = disabled, 1 = enabled
+use_ackerman=1
+
+; Generally this will be the center of the last axle
+[pos_ackerman]
+posY=0.52
+posZ=-2.744
+
+#########################################
+######## BRAKES CONFIGURATION
+#########################################
+
+[brakes]
+max_brake_torque=80000
+brake_bias=0.7
+handbrake_torque=5000
+;Handbrake Axle: 0 = rear only, 1 = front only, middle: both
+handbrakeAxle=0
+
+#########################################
+######## WHEELS CONFIGURATION
+#########################################
+
+## THESE SETTINGS ARE NOT CODED YET, DO NOT CHANGE BELOW
+
+#[tires]
+#type=pacejka
+
+#[tires_pacejka]
+#adherent_u=0.95
+#stiffness=0.8
+#shape=1.5
+#peak_u=1.1
+#curvature=-2
