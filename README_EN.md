@@ -1,4 +1,4 @@
-# Ago'Projects – Vehicle Templates
+# Ago'Projects – Vehicle Template
 This repository provides a standardized base structure for vehicle creation, along with clear naming conventions for files and variables. It is designed to facilitate collaboration and ensure consistency across projects.
 
 ---

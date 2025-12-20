@@ -1,4 +1,4 @@
-# Ago'Projects – Template véhicules
+# Ago'Projects – Template véhicule
 Ce dépôt fournit une structure de base standardisée pour la création de véhicules, ainsi qu’une nomenclature claire pour les noms de fichiers et de variables. Il est conçu pour faciliter la collaboration et assurer la cohérence entre les projets.
 
 An english version is here : [README_EN.md](README_EN.md)
