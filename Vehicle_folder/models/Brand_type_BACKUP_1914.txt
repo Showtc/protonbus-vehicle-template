@@ -1,6 +1,10 @@
 [part1_3ds]
+<<<<<<< HEAD
+model1=
+=======
 model1=common/model.3ds
 model2=
+>>>>>>> dev-show
 
 [steering_wheel]
 posX=-0.596049
@@ -22,4 +26,8 @@ rotX=-57.6783
 rotY=0
 rotZ=0
 maxAngle=288
+<<<<<<< HEAD
 maxValue=130
+=======
+maxValue=130
+>>>>>>> dev-show
