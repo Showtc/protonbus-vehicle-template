@@ -74,7 +74,7 @@ Here is the directory and file tree of the repository:
 - **Encoding**: All files must be encoded in **UTF-8**.
 - **Case**: File and folder names must be in **lowercase**, with `_` (underscores) replacing spaces.
 - **Dots**: Replace `.` with `-` (e.g., `MIDR_06-20-45`).
-- **Snake Case**: Use `snake_case` for file and variable names, except for brand names (e.g., `Hanover_EG3`).
+- **Snake Case**: Use `snake_case` for file and variable names, except for brand names (e.g., `floor_e5.png`, or in the case of a brand `Hanover_EG3`).
 - **Nom des fichiers et des variables** : Only in english
 
 ### Naming Example
@@ -87,3 +87,4 @@ For textures of a part like the **Hanover EG3** unit, use a common prefix to gro
 - **`common/` Folders**: Only contain files shared among all vehicle variants.
 - **Subfolders in `repaints/`**: You can create subfolders to organize liveries by vehicle.
 - **Consistency**: Follow the same naming convention for all files and variables.
+- **Images size** : Images must be powers of 2, i.e. 16x16, 32x32, 64x64, 256x256, 512x512, 1024x1024, 2048x2048 (max).
