@@ -74,6 +74,7 @@ Here is the directory and file tree of the repository:
 - **Case**: File and folder names must be in **lowercase**, with `_` (underscores) replacing spaces.
 - **Dots**: Replace `.` with `-` (e.g., `MIDR_06-20-45`).
 - **Snake Case**: Use `snake_case` for file and variable names, except for brand names (e.g., `Hanover_EG3`).
+- **Nom des fichiers et des variables** : Only in english
 
 ### Naming Example
 For textures of a part like the **Hanover EG3** unit, use a common prefix to group files:
