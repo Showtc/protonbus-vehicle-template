@@ -13,39 +13,40 @@ Here is the directory and file tree of the repository:
 
 ```bash
 .
+├── LICENSE
 ├── README.md
 ├── README_EN.md
 ├── Vehicle_articulated_configuration.ini
-├── Vehicle_folder/
-│   ├── content_info/
-│   │   └── thumbnails/
-│   ├── models/
+├── Vehicle_folder
+│   ├── content_info
+│   │   └── thumbnails
+│   ├── models
 │   │   ├── Brand_type.txt
-│   │   └── common/
-│   ├── repaints/
-│   ├── resources/
-│   │   └── templates/
-│   ├── scripts/
-│   │   ├── doors/
+│   │   └── common
+│   ├── repaints
+│   ├── resources
+│   │   ├── dev_files
+│   │   │   └── requirements.txt
+│   │   └── templates
+│   ├── scripts
+│   │   ├── doors
 │   │   │   ├── rightdoor1.txt
 │   │   │   ├── rightdoor2.txt
 │   │   │   └── rightdoor3.txt
-│   │   ├── gearboxes/
+│   │   ├── gearboxes
 │   │   │   ├── Voith_euro2.txt
 │   │   │   └── ZF_euro2.txt
-│   │   ├── lights/
+│   │   ├── lights
 │   │   │   └── lights.txt
-│   │   └── wheels/
+│   │   └── wheels
 │   │       └── wheels.txt
-│   ├── sounds/
-│   │   ├── MIDR_06-20-45/
-│   │   ├── common/
-│   │   ├── compressor/
-│   │   ├── doors/
+│   ├── sounds
+│   │   ├── MIDR_06-20-45
+│   │   ├── common
+│   │   ├── compressor
+│   │   ├── doors
 │   │   └── sounds.txt
-│   └── textures/
-│       └── _dev_files/
-│           └── requirements.txt
+│   └── textures
 └── Vehicle_solo_configuration.ini
 ```
 

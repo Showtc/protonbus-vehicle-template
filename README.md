@@ -15,6 +15,7 @@ Voici l’arbre des dossiers et fichiers du dépôt :
 
 ```bash
 .
+├── LICENSE
 ├── README.md
 ├── README_EN.md
 ├── Vehicle_articulated_configuration.ini
@@ -26,6 +27,8 @@ Voici l’arbre des dossiers et fichiers du dépôt :
 │   │   └── common
 │   ├── repaints
 │   ├── resources
+│   │   ├── dev_files
+│   │   │   └── requirements.txt
 │   │   └── templates
 │   ├── scripts
 │   │   ├── doors
@@ -46,8 +49,6 @@ Voici l’arbre des dossiers et fichiers du dépôt :
 │   │   ├── doors
 │   │   └── sounds.txt
 │   └── textures
-│       └── _dev_files
-│           └── requirements.txt
 └── Vehicle_solo_configuration.ini
 ```
 
@@ -62,11 +63,11 @@ Voici l’arbre des dossiers et fichiers du dépôt :
 | `models/` | Modèles 3D du véhicule et fichiers de configuration associés (ex : animation du compte-tours, vitesse). |
 | `repaints/` | Livrées personnalisées pour le véhicule. |
 | `resources/` | Ressources utilisateur (templates, etc.). *Note : Ago'Projects n’utilise pas ce dossier pour les manuels des véhicules.* |
+| `resources/dev_files/` | Fichiers de développement comme les fichiers `.blend` (Blender) utilisés. |
+| `resources/dev_files/requirements.text` | Fichier permettant à l'utilisateur de savoir quelle est la version minimale de Blender à utiliser, ou bien d'autres logiciels. |
 | `scripts/` | Logique principale du véhicule (portes, boîtes de vitesses, éclairages, roues, etc.). |
 | `sounds/` | Sons du véhicule et fichiers de configuration audio. |
 | `textures/` | Textures du véhicule. |
-| `textures/_dev_files/` | Fichiers de développement comme les fichiers `.blend` (Blender) utilisés. |
-| `textures/_dev_files/requirements.text` | Fichier permettant à l'utilisateur de savoir quelle est la version minimale de Blender à utiliser, ou bien d'autres logiciels. |
 
 ## Nomenclature
 
