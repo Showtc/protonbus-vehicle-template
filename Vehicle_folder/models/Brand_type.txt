@@ -1,5 +1,6 @@
 [part1_3ds]
-model1=
+model1=common/model.3ds
+model2=
 
 [steering_wheel]
 posX=-0.596049
