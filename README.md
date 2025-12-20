@@ -1,6 +1,8 @@
 # Ago'Projects – Template véhicules
 Ce dépôt fournit une structure de base standardisée pour la création de véhicules, ainsi qu’une nomenclature claire pour les noms de fichiers et de variables. Il est conçu pour faciliter la collaboration et assurer la cohérence entre les projets.
 
+An english version is here : [README_EN.md](README_EN.md)
+
 ---
 
 ## Important
@@ -14,6 +16,7 @@ Voici l’arbre des dossiers et fichiers du dépôt :
 ```bash
 .
 ├── README.md
+├── README_EN.md
 ├── Vehicle_articulated_configuration.ini
 ├── Vehicle_folder
 │   ├── content_info
