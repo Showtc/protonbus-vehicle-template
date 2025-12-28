@@ -35,9 +35,8 @@ Voici l’arbre des dossiers et fichiers du dépôt :
 │   │   │   ├── rightdoor1.txt
 │   │   │   ├── rightdoor2.txt
 │   │   │   └── rightdoor3.txt
-│   │   ├── gearboxes
-│   │   │   ├── Voith_euro2.txt
-│   │   │   └── ZF_euro2.txt
+│   │   ├── physics
+│   │   │   └── physics_Voith_euro2.txt
 │   │   ├── lights
 │   │   │   └── lights.txt
 │   │   └── wheels
