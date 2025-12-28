@@ -1,7 +1,12 @@
-#########################################
-######## ENGINE CONFIGURATION
-#########################################
+/**
+ * Moteur/Motor : MIDR_06.20.45
+ * Boîte de vitesses/Gearbox : Voith
+ */
 
+/**
+ * Configuration du moteur
+ * Engine configuration
+ */
 [speed_limit]
 use_limit=1
 max_speed=80
@@ -18,7 +23,8 @@ inertia=3
 friction_torque=50
 rotational_friction=0.67
 viscous_friction=0.05
-;Idle control: 0 = passive, 1 = active
+// Contrôle du ralenti : 0 = Passif, 1 = Actif
+// Idle control : 0 = Passive, 1 = Active
 idle_control=1
 max_idle_throttle=0.5
 can_stall=1
@@ -27,11 +33,10 @@ stalled_friction_torque=1000
 starter_effectiveness=1
 max_fuel_per_rev=0.7
 
-#########################################
-######## GEARBOX CONFIGURATION
-#########################################
-
-
+/**
+ * Configuration de la boîte de vitesses
+ * Gearbox configuration
+ */
 [clutch_torque_converter]
 lock_rpm=2000
 lock_ratio_bias=0.75
@@ -50,51 +55,48 @@ start_gear=1
 next_gear_min_speed=3
 strict_park_mode=1
 
-#########################################
-######## DIFFERENTIAL CONFIGURATION
-#########################################
-
+/**
+ * Configuration du différentiel
+ * Differential configuration
+ */
 [differential]
 gearRatio=6.025
-
+// opcoes: open locked viscous clutch_pack torque_bias
 type=viscous
-#opcoes: open locked viscous clutch_pack torque_bias
-
-## opcoes para viscous
+// opcoes para viscous
 preload=100
 powerStiffness=0.2
 coastStiffness=0.2
-
-## opcoes para clutch_pack
+// opcoes para clutch_pack
 clutchPreload=50
 clutchPackFriction=0.4
 powerAngle=45
 coastAngle=80
-
-## opcoes para torque_bias
+// opcoes para torque_bias
 torquePreload=0
 powerRatio=5
 coastRatio=5
 
-#########################################
-######## STEERING CONFIGURATION
-#########################################
-
+/**
+ * Configuration de la direction
+ * Steering configuration
+ */
 [steering]
 max_steer_angle=47
 toe_angle=0
-;Ackerman: 0 = disabled, 1 = enabled
+// Ackerman : 0 = Désactivé/Disabled, 1 = Activé/Enabled
 use_ackerman=1
 
-; Generally this will be the center of the last axle
+// En général, il s'agit du centre du dernier essieu.
+// Generally this will be the center of the last axle
 [pos_ackerman]
 posY=0.52
 posZ=-2.744
 
-#########################################
-######## BRAKES CONFIGURATION
-#########################################
-
+/**
+ * Configuration des freins
+ * Brakes configuration
+ */
 [brakes]
 max_brake_torque=80000
 brake_bias=0.7
@@ -102,18 +104,18 @@ handbrake_torque=5000
 ;Handbrake Axle: 0 = rear only, 1 = front only, middle: both
 handbrakeAxle=0
 
-#########################################
-######## WHEELS CONFIGURATION
-#########################################
+/**
+ * Configuration des roues
+ * Wheels configuration
+ */
+// Ces paramètres ne sont pas utilisables, ne changer pas ce qui suit
+// These settings are not coded yet, do not change below
+// [tires]
+// type=pacejka
 
-## THESE SETTINGS ARE NOT CODED YET, DO NOT CHANGE BELOW
-
-#[tires]
-#type=pacejka
-
-#[tires_pacejka]
-#adherent_u=0.95
-#stiffness=0.8
-#shape=1.5
-#peak_u=1.1
-#curvature=-2
+// [tires_pacejka]
+// adherent_u=0.95
+// stiffness=0.8
+// shape=1.5
+// peak_u=1.1
+// curvature=-2
