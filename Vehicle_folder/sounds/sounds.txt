@@ -1,24 +1,35 @@
-[sound_manager]
-max_rpm=3000
+/**
+ * Configuration des sons
+ * Sounds configuration
+ *
+ * Moteur/Motor : MIDR_06.20.45
+ * Boîtes de vitesses/Gearbox : Voith
+ *
+ * @param whenToPlay : allCams : Toute vue - All views
+ *                     driverCam : Vue conducteur seulement - Driver's view only
+ *                     passengerCam : Vue passagère seulement - Passenger view only
+ *                     externalCam : Vue extérieur seulement - Exterior view only
+ *                     internalCam : Vue conducteur et passagère - Driver and passenger view
+ */
 
+
+/**
+ * Position du moteur
+ * Engine location
+ */
 [engine_location]
 posX=0.0
 posY=1.747494
 posZ=-6.012901
 
-###############
-whenToPlay:
-allCams (Toute vue - All views)
-driverCam (Vue conducteur seulement - Driver's view only)
-passengerCam (Vue passagère seulement - Passenger view only)
-externalCam (Vue extérieur seulement - Exterior view only)
-internalCam (Vue conducteur et passagère - Driver and passenger view)
+[sound_manager]
+max_rpm=3000
 
-##########################################################
-################ Démarrage moteur
-################ Engine start
-##########################################################
 
+/**
+ * Démarrage moteur
+ * Engine start
+ */
 [turnEngineOn]
 file=sounds/MIDR_06-20-45/MIDR_062045_on.wav
 minDist=1
@@ -27,11 +38,11 @@ spatialBlend=0.9
 volume=1
 pitch=1
 
-##########################################################
-################ Extinction moteur
-################ Engine shutdown
-##########################################################
 
+/**
+ * Extinction moteur
+ * Engine shutdown
+ */
 [turnEngineOff]
 file=sounds/MIDR_06-20-45/MIDR_062045_off.wav
 minDist=1
@@ -40,11 +51,11 @@ spatialBlend=0.8
 volume=1
 pitch=1
 
-##########################################################
-################ Son moteur intérieur - Neutre/Sur place
-################ Internal engine sound - Neutral/Idle
-##########################################################
 
+/**
+ * Son moteur intérieur - Neutre/Sur place
+ * Internal engine sound - Neutral/Idle
+ */
 [sound1]
 file=sounds/MIDR_06-20-45/MIDR_062045@575.wav
 usePosEngine=1
@@ -84,11 +95,11 @@ p1y=0.4
 p2x=1
 p2y=4.4
 
-##########################################################
-################ Son moteur intérieur - 1
-################ Inner engine sound - 1
-##########################################################
 
+/**
+ * Son moteur intérieur - 1
+ * Inner engine sound - 1
+ */
 [sound2]
 file=sounds/MIDR_06-20-45/MIDR_062045@775.wav
 usePosEngine=1
@@ -132,11 +143,11 @@ p1y=0.4
 p2x=1
 p2y=3.8
 
-##########################################################
-################ Son moteur intérieur - 2
-################ Inner engine sound - 2
-##########################################################
 
+/**
+ * Son moteur intérieur - 2
+ * Inner engine sound - 2
+ */
 [sound3]
 file=sounds/MIDR_06-20-45/MIDR_062045@1100.wav
 usePosEngine=1
@@ -180,11 +191,11 @@ p1y=0.4
 p2x=1
 p2y=2.4
 
-##########################################################
-################ Son moteur intérieur - 3
-################ Inner engine sound - 3
-##########################################################
 
+/**
+ * Son moteur intérieur - 3
+ * Inner engine sound - 3
+ */
 [sound4]
 file=sounds/MIDR_06-20-45/MIDR_062045@1500.wav
 usePosEngine=1
@@ -224,11 +235,11 @@ p1y=0.4
 p2x=1
 p2y=1.2
 
-##########################################################
-################ Son moteur intérieur - 4
-################ Inner engine sound - 4
-##########################################################
 
+/**
+ * Son moteur intérieur - 4
+ * Inner engine sound - 4
+ */
 [sound5]
 file=sounds/MIDR_06-20-45/MIDR_062045@1595.wav
 usePosEngine=1
@@ -268,11 +279,11 @@ p1y=0.4
 p2x=1
 p2y=1.2
 
-##########################################################
-################ Son moteur intérieur - 5
-################ Inner engine sound - 5
-##########################################################
 
+/**
+ * Son moteur intérieur - 5
+ * Inner engine sound - 5
+ */
 [sound6]
 file=sounds/MIDR_06-20-45/MIDR_062045@1875.wav
 usePosEngine=1
@@ -312,11 +323,11 @@ p1y=0.4
 p2x=1
 p2y=1.2
 
-##########################################################
-################ Son moteur intérieur - 6
-################ Inner engine sound - 6
-##########################################################
 
+/**
+ * Son moteur intérieur - 6
+ * Inner engine sound - 6
+ */
 [sound7]
 file=sounds/MIDR_06-20-45/MIDR_062045@2100.wav
 usePosEngine=1
@@ -356,11 +367,11 @@ p1y=0.4
 p2x=1
 p2y=1.2
 
-##########################################################
-################ Son moteur extérieur - Neutre/Sur place
-################ Internal engine sound - Neutral/Idle
-##########################################################
 
+/**
+ * Son moteur extérieur - Neutre/Sur place
+ * Internal engine sound - Neutral/Idle
+ */
 [sound8]
 file=sounds/MIDR_06-20-45/MIDR_062045_ext@575.wav
 usePosEngine=1
@@ -399,11 +410,11 @@ p1y=0.4
 p2x=1
 p2y=4.4
 
-##########################################################
-################ Son moteur extérieur - 1
-################ Exterior engine sound - 1
-##########################################################
 
+/**
+ * Son moteur extérieur - 1
+ * Exterior engine sound - 1
+ */
 [sound9]
 file=sounds/MIDR_06-20-45/MIDR_062045_ext@775.wav
 usePosEngine=1
@@ -446,11 +457,11 @@ p1y=0.4
 p2x=1
 p2y=3.8
 
-##########################################################
-################ Son moteur extérieur - 2
-################ Exterior engine sound - 2
-##########################################################
 
+/**
+ * Son moteur extérieur - 2
+ * Exterior engine sound - 2
+ */
 [sound10]
 file=sounds/MIDR_06-20-45/MIDR_062045_ext@1025.wav
 usePosEngine=1
@@ -494,11 +505,11 @@ p1y=0.4
 p2x=1
 p2y=2.4
 
-##########################################################
-################ Son moteur extérieur - 3
-################ Exterior engine sound - 3
-##########################################################
 
+/**
+ * Son moteur extérieur - 3
+ * Exterior engine sound - 3
+ */
 [sound11]
 file=sounds/MIDR_06-20-45/MIDR_062045_ext@1275.wav
 usePosEngine=1
@@ -538,11 +549,11 @@ p1y=0.4
 p2x=1
 p2y=1.2
 
-##########################################################
-################ Son moteur extérieur - 4
-################ Exterior engine sound - 4
-##########################################################
 
+/**
+ * Son moteur extérieur - 4
+ * Exterior engine sound - 4
+ */
 [sound12]
 file=sounds/MIDR_06-20-45/MIDR_062045_ext@1600.wav
 usePosEngine=1
@@ -583,11 +594,11 @@ p2x=1
 p2y=1.2
 
 
-##########################################################
-################ Son à haute vitesse/Axle noise
-################ High-speed sound/Axle noise
-##########################################################
 
+/**
+ * Son à haute vitesse/Axle noise
+ * High-speed sound/Axle noise
+ */
 [sound13]
 file=sounds/MIDR_06-20-45/trans.wav
 usePosEngine=0
@@ -616,11 +627,11 @@ playOnlyOnSelectedGears=0
 minGearToPlay=1
 maxGearToPlay=3
 
-##########################################################
-################ Son du retarder
-################ Retarder sound
-##########################################################
 
+/**
+ * Son du retarder
+ * Retarder sound
+ */
 [sound14]
 file=sounds/retarder-2.wav
 usePosEngine=0
@@ -675,11 +686,11 @@ p5y=0.137
 p6x=1
 p6y=0
 
-##########################################################
-################ Son du turbo
-################ Turbo sound
-##########################################################
 
+/**
+ * Son du turbo
+ * Turbo sound
+ */
 [sound15]
 file=sounds/turbo.wav
 usePosEngine=1
@@ -715,11 +726,11 @@ p1y=0
 p2x=1
 p2y=2.4
 
-##########################################################
-################ Compresseur d'air
-################ Air compressor sound
-##########################################################
 
+/**
+ * Compresseur d'air
+ * Air compressor sound
+ */
 [fakeAirRelease]
 file=sounds/compressor/compressor.wav
 use_random_file=0
@@ -736,10 +747,10 @@ randomTimeToWaitAtStart=0
 playTimeToWaitAtStart=20
 playTimeInterval=20
 
-##########################################################
-################ Klaxon
-##########################################################
 
+/**
+ * Klaxon
+ */
 [horn]
 file=sounds/common/Klaxon.wav
 posX=0.0
@@ -752,11 +763,11 @@ volume=1
 pitch=0.8
 
 
-##########################################################
-################ Démarrage du tableau de bord
-################ Dashboard ignition
-##########################################################
 
+/**
+ * Démarrage du tableau de bord
+ * Dashboard ignition
+ */
 [turnElectricOn]
 file=sounds/common/ElectricOn.wav
 posX=-0.594338
@@ -768,11 +779,11 @@ spatialBlend=0.9
 volume=0.5
 pitch=1
 
-##########################################################
-################ Coupure courant du tableau de bord
-################ Dashboard shutdown
-##########################################################
 
+/**
+ * Coupure courant du tableau de bord
+ * Dashboard shutdown
+ */
 [turnElectricOff]
 file=sounds/common/ElectricOff.wav
 posX=-0.594338
@@ -785,11 +796,11 @@ volume=0.5
 pitch=1
 
 
-##########################################################
-################ Bruit de recul
-################ Reverse sound
-##########################################################
 
+/**
+ * Bruit de recul
+ * Reverse sound
+ */
 [reverse]
 file=sounds/common/reverse.wav
 posX=0.0
@@ -802,11 +813,11 @@ volume=1
 pitch=1
 
 
-##########################################################
-################ Actionne un bouton
-################ Press a button
-##########################################################
 
+/**
+ * Actionne un bouton
+ * Press a button
+ */
 [genericButtonOn]
 file=sounds/common/VDV_on.wav
 posX=-0.594338
@@ -818,11 +829,11 @@ spatialBlend=0.9
 volume=0.5
 pitch=1
 
-##########################################################
-################ Lache un bouton
-################ Release a button
-##########################################################
 
+/**
+ * Lache un bouton
+ * Release a button
+ */
 [genericButtonOff]
 file=sounds/common/VDV_off.wav
 posX=-0.594338
@@ -834,11 +845,11 @@ spatialBlend=0.9
 volume=0.5
 pitch=1
 
-##########################################################
-################ Bouton/Actionneur des feux - Comodos
-################ Light knob/actuator - Comodos
-##########################################################
 
+/**
+ * Bouton/Actionneur des feux - Comodos
+ * Light knob/actuator - Comodos
+ */
 [beamsButton]
 file=sounds/common/blinkerSW.wav
 posX=-0.64847
@@ -851,11 +862,11 @@ volume=0.5
 pitch=1
 
 
-##########################################################
-################ Son du clignotant
-################ Blinker sound
-##########################################################
 
+/**
+ * Son du clignotant
+ * Blinker sound
+ */
 [blinkers]
 file=sounds/common/blinker.wav
 posX=-0.921913
@@ -868,11 +879,11 @@ volume=0.2
 pitch=1
 
 
-##########################################################
-################ Boutons de la boite de vitesses
-################ Gearbox buttons
-##########################################################
 
+/**
+ * Boutons de la boite de vitesses
+ * Gearbox buttons
+ */
 [gearButton]
 file=sounds/common/gangwahltaster.wav
 posX=-0.594338
@@ -884,11 +895,11 @@ spatialBlend=0.9
 volume=1
 pitch=1
 
-##########################################################
-################ Arrêt demandé
-################ Stop request
-##########################################################
 
+/**
+ * Arrêt demandé
+ * Stop request
+ */
 [stopRequest]
 file=sounds/common/campainha.wav
 posX=-0.64847
@@ -900,11 +911,11 @@ spatialBlend=0.8
 volume=0.5
 pitch=1
 
-##########################################################
-################ Bruit de la pédale de frein
-################ Brake pedal noise
-##########################################################
 
+/**
+ * Bruit de la pédale de frein
+ * Brake pedal noise
+ */
 [brakePedal]
 file=sounds/common/brakePedal.wav
 posX=-0.322823
@@ -917,11 +928,11 @@ volume=0.5
 pitch=1
 
 
-##########################################################
-################ Bruit des freins
-################ Brake noise
-##########################################################
 
+/**
+ * Bruit des freins
+ * Brake noise
+ */
 [brakingWheels]
 file=sounds/common/brake.wav
 posX=0.032929
@@ -933,11 +944,11 @@ spatialBlend=0.7
 volume=0.5
 pitch=1
 
-##########################################################
-################ Activation du frein de parc
-################ Activating the parking brake
-##########################################################
 
+/**
+ * Activation du frein de parc
+ * Activating the parking brake
+ */
 [parkingBrakeOn]
 file=sounds/common/FreinParkOn.wav
 posX=-1.126191
@@ -949,11 +960,11 @@ spatialBlend=0.9
 volume=0.5
 pitch=1
 
-##########################################################
-################ Désactivation du frein de parc
-################ Disabling the parking brake
-##########################################################
 
+/**
+ * Désactivation du frein de parc
+ * Disabling the parking brake
+ */
 [parkingBrakeOff]
 file=sounds/common/FreinParkOff.wav
 posX=-1.126191
@@ -966,11 +977,11 @@ volume=0.5
 pitch=1
 
 
-##########################################################
-################ Ouveture de la porte 1
-################ Door 1 opening
-##########################################################
 
+/**
+ * Ouveture de la porte 1
+ * Door 1 opening
+ */
 [rightDoor1Open]
 file=sounds/doors/DoorOpn.wav
 posX=0.562367
@@ -982,11 +993,11 @@ spatialBlend=0.6
 volume=0.5
 pitch=1
 
-##########################################################
-################ Fermeture de la porte 1
-################ Door 1 closing
-##########################################################
 
+/**
+ * Fermeture de la porte 1
+ * Door 1 closing
+ */
 [rightDoor1Close]
 file=sounds/doors/DoorCls.wav
 posX=0.562367
@@ -999,11 +1010,11 @@ volume=0.5
 pitch=1
 
 
-##########################################################
-################ Ouveture de la porte 2
-################ Door 2 opening
-##########################################################
 
+/**
+ * Ouveture de la porte 2
+ * Door 2 opening
+ */
 [rightDoor2Open]
 file=sounds/doors/Door2Opn.wav
 posX=0.633045
@@ -1015,11 +1026,11 @@ spatialBlend=0.6
 volume=0.5
 pitch=1
 
-##########################################################
-################ Fermeture de la porte 2
-################ Door 2 closing
-##########################################################
 
+/**
+ * Fermeture de la porte 2
+ * Door 2 closing
+ */
 [rightDoor2Close]
 file=sounds/doors/Door2Cls.wav
 posX=0.633045
@@ -1031,11 +1042,11 @@ spatialBlend=0.4
 volume=0.5
 pitch=1
 
-##########################################################
-################ Activation des essuie-glaces
-################ Windshield wiper activation
-##########################################################
 
+/**
+ * Activation des essuie-glaces
+ * Windshield wiper activation
+ */
 [wiper1Start]
 file=sounds/common/Scheibenwischer_trocken.wav
 posX=0.058354
@@ -1047,11 +1058,11 @@ spatialBlend=1
 volume=99.99
 pitch=1
 
-##########################################################
-################ Extrémité des essuie-glaces/Fin de l'animation
-################ Wiper tip/End of animation
-##########################################################
 
+/**
+ * Extrémité des essuie-glaces/Fin de l'animation
+ * Wiper tip/End of animation
+ */
 [wiper1End]
 file=sounds/common/Scheibenwischer_trocken.wav
 posX=0.058354
@@ -1063,11 +1074,11 @@ spatialBlend=1
 volume=99.99
 pitch=1
 
-##########################################################
-################ Valideur
-################ Validator
-##########################################################
 
+/**
+ * Valideur
+ * Validator
+ */
 [ticketMachine]
 file=sounds/common/ticketMachine.wav
 posX=0.439311
@@ -1079,11 +1090,11 @@ spatialBlend=0.2
 volume=2
 pitch=1
 
-##########################################################
-################ Bruit d'ambiance passagers intérieur
-################ Interior passenger ambient noise
-##########################################################
 
+/**
+ * Bruit d'ambiance passagers intérieur
+ * Interior passenger ambient noise
+ */
 [noiseExtra]
 file=sounds/MIDR_06-20-45/internal noise.wav
 posX=0
@@ -1095,11 +1106,11 @@ spatialBlend=0.9
 volume=0.5
 pitch=1
 
-##########################################################
-################ A/C - Faible
-################ A/C - Low
-##########################################################
 
+/**
+ * A/C - Faible
+ * A/C - Low
+ */
 [airConditioningSlow]
 file=sounds/lowair.wav
 posX=0
@@ -1111,11 +1122,11 @@ spatialBlend=0.8
 volume=0.5
 pitch=1
 
-##########################################################
-################ A/C - Forte
-################ A/C - High
-##########################################################
 
+/**
+ * A/C - Forte
+ * A/C - High
+ */
 [airConditioningFast]
 file=sounds/strongair.wav
 posX=0

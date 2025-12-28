@@ -1,8 +1,10 @@
-//////////////////////////////////
-Configuration des portes
-Doors configuration
-//////////////////////////////////
-
+/**
+ * Configuration des portes
+ * Doors configuration
+ *
+ * @param anim_type : Type d'animation -- 1 = Rotation de 90°
+ *                    Animation type -- 1 = Rotation of 90°
+ */
 [rightdoor1]
 posX=1.227134
 posY=0.0
@@ -11,30 +13,28 @@ isEntrance=1
 isExit=0
 getPathsFromModel=1
 maxPathsToCheck=30
-; Type d'animation - 1 = Rotation de 90°
-; Animation type - 1 = Rotation of 90°
 anim_type=1
 anim_rotate_1=-90
 anim_rotate_2=90
 anim_time_1=2.0
 anim_time_2=2.0
 
-; Porte de gauche
-; Left door
+// Porte de gauche
+// Left door
 [anim1_door1]
 posX=0.919103
 posY=1.392929
 posZ=5.13721
 
-; Porte de droite
-; Right door
+// Porte de droite
+// Right door
 [anim1_door2]
 posX=0.919103
 posY=1.394613
 posZ=4.4194
 
-; Lumière lors de l'ouverture des portes
-; Door opening light
+// Lumière lors de l'ouverture des portes
+// Door opening light
 [doorlight]
 enabled=1
 posX=0.562367
@@ -47,8 +47,8 @@ colorG=0.8
 colorB=0.8
 colorA=1
 
-; Texture de lumière
-; Light texture
+// Texture de lumière
+// Light texture
 [doorlight_tex_1]
 posX=0.562367
 posY=2.986542
