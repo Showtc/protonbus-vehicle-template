@@ -14,13 +14,16 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        
+      - name: Install zip
+        run: sudo apt-get install -y zip
 
       - name: Create ZIP archive (excluding .gitkeep)
         run: |
-          # Delete .gitkeep files
+          cd $GITHUB_WORKSPACE
           find . -name ".gitkeep" -type f -delete
-          # Create a zip archive of the repo, without the .git folder
-          zip -r protonbus-vehicle-template.zip . -x "*.git*"
+          zip -r release.zip . -x "*.git*" "*.github/*"
+          ls -lh release.zip
 
       - name: Generate Changelog
         id: changelog
@@ -31,23 +34,14 @@ jobs:
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref }} # Tag name
           release_name: Release ${{ github.ref }} # Release title
           body: | # Release description
             ## Changelog ${{ github.ref }} :
             ${{ steps.changelog.outputs.changelog }}
+          files: release.zip
           draft: false
           prerelease: false
-
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./release.zip
-          asset_name: release.zip
-          asset_content_type: application/zip
