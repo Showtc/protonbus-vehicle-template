@@ -28,17 +28,20 @@ jobs:
       - name: Generate Changelog
         id: changelog
         run: |
-          CHANGELOG=$(git log --pretty=format:"- %s (%h)" $(git describe --tags --abbrev=0)..${{ github.ref }})
+          # Gets commits between the last tag and the current tag
+          PREVIOUS_TAG=$(git describe --tags --abbrev=0 ${{ github.ref }}^)
+          CHANGELOG=$(git log --pretty=format:"- %s (%h)" $PREVIOUS_TAG..${{ github.ref_name }})
           echo "changelog=$CHANGELOG" >> $GITHUB_OUTPUT
 
-      - name: Create Release
+
+      - name: Create Release and Upload Asset
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref }} # Tag name
-          release_name: Release ${{ github.ref }} # Release title
+          name: Release ${{ github.ref }} # Release title
           body: | # Release description
-            ## Changelog ${{ github.ref }} :
+            ## Changelog :
             ${{ steps.changelog.outputs.changelog }}
           files: release.zip
           draft: false
