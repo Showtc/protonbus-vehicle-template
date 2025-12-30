@@ -42,7 +42,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref }} # Tag name
-          name: Release ${{ github.ref }} # Release title
+          name: Release ${{ github.ref_name }} # Release title
           body: | # Release description
             ## Changelog :
             ${{ steps.changelog.outputs.changelog }}
