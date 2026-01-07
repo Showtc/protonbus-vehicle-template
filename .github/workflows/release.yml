@@ -24,8 +24,20 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE
           find . -name ".gitkeep" -type f -delete
-          zip -r release.zip . -x "*.git*" "*.github/*" "*event.json*" "*bin/*"
-          ls -lh release.zip
+          zip -r protonbus-vehicle-template_${{ github.ref_name }}.zip . -x "*.git*" "*.github/*" "*event.json*" "*bin/*"
+          ls -lh protonbus-vehicle-template_${{ github.ref_name }}.zip
+
+      - name: Read CHANGELOG.md
+        id: changelog_file
+        run: |
+          if [ -f ".github/CHANGELOG.md" ]; then
+            CHANGELOG_CONTENT=$(cat .github/CHANGELOG.md)
+          else
+            CHANGELOG_CONTENT=""
+          fi
+          echo "content<<EOF" >> $GITHUB_OUTPUT
+          echo "$CHANGELOG_CONTENT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Generate Changelog
         id: changelog
@@ -46,7 +58,9 @@ jobs:
           tag_name: ${{ github.ref }} # Tag name
           name: Release ${{ github.ref_name }} # Release title
           body: | # Release description
-            ## Changelog :
+            ${{ steps.changelog_file.outputs.content }}
+
+            ## Changelog
             ${{ steps.changelog.outputs.changelog }}
           files: release.zip
           draft: false
