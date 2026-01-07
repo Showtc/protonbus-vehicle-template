@@ -1,31 +1,40 @@
-#### Vitesse des clignotants
-#### Blinkers speed
+/**
+ * Vitesse des clignotants
+ * Blinkers speed
+ */
 [lights_settings]
 blinking_speed=0.8
 
-#### Feux - Fausse projection
-## Intensité non modifiable
-#### Fire - False projection
-## Intensity cannot be changed
-
-### Feux de croisement
-### Low beam
+/**
+ * Feux - Fausse projection
+ * Remarque : Intensité non modifiable
+ * Lights - False projection
+ * Note : Intensity cannot be changed
+ */
+// Feux de croisement
+// Low beam
 [low_beam_projector]
 posX=0.0
 posY=0.50582
 posZ=6.067109
 
-### Feux de route
-### Hight beam
+// Feux de route
+// Hight beam
 [high_beam_projector]
 posX=0.0
 posY=0.50582
 posZ=6.143698
 
 
-### Position des feux de croisement
-### Low beam position
-# Droite - Right
+/**
+ * Feux - Projection de lumière
+ * Lights - Lights projection
+ */
+/**
+ * Feux de croisement
+ * Low beam
+ */
+// Droite - Right
 [low_beam_spotlight_1]
 posX=1.040262
 posY=0.50582
@@ -38,7 +47,7 @@ colorG=0.193
 colorB=0.164
 colorA=0.7
 
-# Gauche - Left
+// Gauche - Left
 [low_beam_spotlight_2]
 posX=-1.036319
 posY=0.50582
@@ -51,8 +60,8 @@ colorG=0.193
 colorB=0.164
 colorA=0.7
 
-# Feux de croisement, texture seulement (Nombre à incrémenter)
-# Low beam, texture only (Number to be incremented)
+// Feux de croisement, texture seulement (Nombre à incrémenter)
+// Low beam, texture only (Number to be incremented)
 [low_beam_1]
 posX=-1.28839
 posY=0.522537
@@ -65,10 +74,11 @@ scaleY=0.1
 scaleZ=0.1
 picture=zLateral.png
 
-
-### Position des feux de route
-### High beam position
-# Droite - Right
+/**
+ * Feux de route
+ * High beam
+ */
+// Droite - Right
 [high_beam_spotlight_1]
 posX=1.040262
 posY=0.50582
@@ -81,7 +91,7 @@ colorG=0.193
 colorB=0.164
 colorA=0.7
 
-# Gauche - Left
+// Gauche - Left
 [high_beam_spotlight_2]
 posX=-1.036319
 posY=0.50582
@@ -94,9 +104,9 @@ colorG=0.193
 colorB=0.164
 colorA=0.7
 
-# Feux de route, texture seulement (Nombre à incrémenter)
-# High beam, texture only (Number to be incremented)
-# Droite - Right
+// Feux de route, texture seulement (Nombre à incrémenter)
+// High beam, texture only (Number to be incremented)
+// Droite - Right
 [high_beam_1]
 posX=-1.00028
 posY=0.764089
@@ -109,7 +119,7 @@ scaleY=0.1
 scaleZ=0.1
 picture=zFarol.png
 
-# Gauche - Left
+// Gauche - Left
 [high_beam_2]
 posX=-1.00028
 posY=0.764089
@@ -122,11 +132,13 @@ scaleY=0.1
 scaleZ=0.1
 picture=zFarol.png
 
-
-### Used for "Ultra" graphics on PCs
-#### Feux de recul, utilisé par les graphiques en "Ultra" sur PC
-#### Reversing lights, used for "Ultra" graphics on PCs
-# Droite - Right
+/**
+ * Feux de recul
+ * Remarque : Utilisé par les graphiques en "Ultra" sur PC
+ * Reversing lights
+ * Note : Used for "Ultra" graphics on PCs
+ */
+// Droite - Right
 [reverse_spotlight_1]
 posX=1.13529
 posY=1.09283
@@ -140,7 +152,7 @@ colorG=0.8
 colorB=0.8
 colorA=1
 
-# Gauche - Left
+// Gauche - Left
 [reverse_spotlight_2]
 posX=-1.13529
 posY=1.09283
@@ -154,9 +166,10 @@ colorG=0.8
 colorB=0.8
 colorA=1
 
-
-#### Clignotants, texture seulement (Nombre à incrémenter)
-#### Flashing lights, texture only (Number to be incremented)
+/**
+ * Clignotants, texture seulement (Nombre à incrémenter)
+ * Blinkers, texture only (Number to be incremented)
+ */
 [left_blinker_1]
 posX=-0.87255
 posY=0.73937
@@ -181,9 +194,10 @@ scaleY=0.35
 scaleZ=0.35
 picture=Z_FlareSeta.png
 
-
-#### Climatisation
-#### Air conditioner
+/**
+ * Climatisation
+ * Air conditioner
+ */
 [air_conditioner_on_1]
 posX=-0.997853
 posY=2.29674
@@ -209,8 +223,10 @@ scaleZ=0.01
 picture=Z_LuzAr.png
 
 
-#### Feux de détresses (Texture)
-#### Emergency lights (Texture)
+/**
+ * Feux de détresses
+ * Emergency lights
+ */
 [emergency_lights_1]
 posX=-0.392244
 posY=1.38708
@@ -224,8 +240,10 @@ scaleZ=0.05
 picture=Z_Warning.png
 
 
-#### Lumières intérieur (Nombre à incrémenter)
-#### Interior lights (Number to be incremented)
+/**
+ * Lumières intérieur (Nombre à incrémenter)
+ * Interior lights (Number to be incremented)
+ */
 [interior_light_1]
 posX=-0.079136
 posY=2.990573
@@ -237,10 +255,23 @@ colorG=0.193
 colorB=0.164
 colorA=0.7
 
-### Lumières intérieur pour les machines faibles
-## A essayer en désactivant le cycle "jour-nuit" et certains effets
-### Interior lights for weak machines
-## Try disabling the "day-night" cycle and certain effects.
+[interior_light_2]
+posX=-0.079136
+posY=2.990573
+posZ=-0.696703
+range=10
+intensity=5
+colorR=0.208
+colorG=0.193
+colorB=0.164
+colorA=0.7
+
+/**
+ * Lumières intérieur pour les machines faibles
+ * A essayer en désactivant le cycle "jour-nuit" et certains effets
+ * Interior lights for weak machines
+ * Try disabling the "day-night" cycle and certain effects.
+ */
 [interior_lights_combined]
 posX=-0.079136
 posY=2.990573
