@@ -1,17 +1,17 @@
-# Ago'Projects – Template véhicule
-Ce dépôt fournit une structure de base standardisée pour la création de véhicules, ainsi qu’une nomenclature claire pour les noms de fichiers et de variables. Il est conçu pour faciliter la collaboration et assurer la cohérence entre les projets.
+# Ago'Projects – Vehicle Template
+This repository provides a standardized base structure for vehicle creation, along with clear naming conventions for files and variables. It is designed to facilitate collaboration and ensure consistency across projects.
 
-An english version is here : [README_EN.md](README_EN.md)
+Une version française est disponible ici : [README_FR.md](README_FR.md)
 
 ---
 
 ## Important
-**Supprimez les fichiers `.gitkeep`** : Ils sont présents uniquement pour forcer Git à versionner les dossiers vides. Ils ne doivent pas être inclus dans votre projet final.
+**Delete `.gitkeep` files**: These files are only present to force Git to track empty directories. They should not be included in your final project.
 
 ---
 
-## Structure du dépôt
-Voici l’arbre des dossiers et fichiers du dépôt :
+## Repository Structure
+Here is the directory and file tree of the repository:
 
 ```bash
 .
@@ -21,6 +21,8 @@ Voici l’arbre des dossiers et fichiers du dépôt :
 ├── Vehicle_articulated_configuration.ini
 ├── Vehicle_folder
 │   ├── content_info
+│   │   └── CHANGELOG.md
+│   │   └── CHANGELOG_FR.md
 │   │   └── thumbnails
 │   ├── models
 │   │   ├── Brand_type.txt
@@ -51,41 +53,47 @@ Voici l’arbre des dossiers et fichiers du dépôt :
 └── Vehicle_solo_configuration.ini
 ```
 
-### Description des dossiers et fichiers
+### Description of Folders and Files
 
-| Dossier/Fichier | Description |
-|-----------------|-------------|
-| `Vehicle_solo_configuration.ini` / `Vehicle_articulated_configuration.ini` | Fichiers de configuration définissant les paramètres obligatoires pour les vues et la physique du véhicule. |
-| `Vehicle_folder/` | Dossier racine du véhicule. |
-| `content_info/` | Contient les métadonnées supplémentaires du véhicule. |
-| `content_info/thumbnails/` | Miniatures utilisées pour les aperçus (`preview`) dans les fichiers de configuration. |
-| `models/` | Modèles 3D du véhicule et fichiers de configuration associés (ex : animation du compte-tours, vitesse). |
-| `repaints/` | Livrées personnalisées pour le véhicule. |
-| `resources/` | Ressources utilisateur (templates, etc.). *Note : Ago'Projects n’utilise pas ce dossier pour les manuels des véhicules.* |
-| `resources/dev_files/` | Fichiers de développement comme les fichiers `.blend` (Blender) utilisés. |
-| `resources/dev_files/requirements.text` | Fichier permettant à l'utilisateur de savoir quelle est la version minimale de Blender à utiliser, ou bien d'autres logiciels. |
-| `scripts/` | Logique principale du véhicule (portes, boîtes de vitesses, éclairages, roues, etc.). |
-| `sounds/` | Sons du véhicule et fichiers de configuration audio. |
-| `textures/` | Textures du véhicule. |
+| Folder/File | Description |
+|-------------|-------------|
+| `Vehicle_solo_configuration.ini` / `Vehicle_articulated_configuration.ini` | Configuration files defining mandatory parameters for vehicle views and physics. |
+| `Vehicle_folder/` | Root folder for the vehicle. |
+| `content_info/` | Contains additional metadata for the vehicle. |
+| `content_info/CHANGELOG.md` / `content_info/CHANGELOG_FR.md` | Changelog between each versions, public and development. |
+| `content_info/thumbnails/` | Thumbnails used for previews (`preview`) in configuration files. |
+| `models/` | 3D models of the vehicle and associated configuration files (e.g., tachometer animation, speed). |
+| `repaints/` | Custom liveries for the vehicle. |
+| `resources/` | User resources (templates, etc.). *Note: Ago'Projects does not use this folder for vehicle manuals.* |
+| `scripts/` | Main logic of the vehicle (doors, gearboxes, lighting, wheels, etc.). |
+| `sounds/` | Vehicle sounds and audio configuration files. |
+| `textures/` | Vehicle textures. |
+| `textures/_dev_files/` | Development files such as `.blend` files (Blender) used. |
+| `textures/_dev_files/requirements.txt` | File informing the user about the minimum required version of Blender or other software. |
 
 ## Nomenclature
 
-### Règles générales
-- **Caractères autorisés** : Utilisez uniquement des caractères ASCII (A-Z, a-z, 0-9, `_`, `-`).
-- **Encodage** : Tous les fichiers doivent être encodés en **UTF-8**.
-- **Casse** : Les noms de fichiers et dossiers doivent être en **minuscules**, avec des `_` (underscores) pour remplacer les espaces.
-- **Points** : Remplacez les `.` par des `-` (ex : `MIDR_06-20-45`).
-- **Snake case** : Utilisez le `snake_case` pour les noms de fichiers et variables, sauf pour les noms de marques (ex : `floor_e5.png`, ou dans le cas d'une marque `Hanover_EG3.png`)
-- **Nom des fichiers et des variables** : Uniquement en anglais
+### General Rules
+- **Allowed Characters**: Use only ASCII characters (A-Z, a-z, 0-9, `_`, `-`).
+- **Encoding**: All files must be encoded in **UTF-8**.
+- **Case**: File and folder names must be in **lowercase**, with `_` (underscores) replacing spaces.
+- **Dots**: Replace `.` with `-` (e.g., `MIDR_06-20-45`).
+- **Snake Case**: Use `snake_case` for file and variable names, except for brand names (e.g., `floor_e5.png`, or in the case of a brand `Hanover_EG3`).
+- **Nom des fichiers et des variables** : Only in english
 
-### **Exemple de nommage**
-Pour les textures d’une pièce comme le boîtier **Hanover EG3**, utilisez un préfixe commun pour regrouper les fichiers :
+### Naming Example
+For textures of a part like the **Hanover EG3** unit, use a common prefix to group files:
 - `Hanover_EG3.png`
 - `Hanover_EG3_buttons.png`
 - `Hanover_EG3_buttons_on.png`
 
-## Bonnes pratiques
-- **Dossiers `common/`** : Contiennent uniquement les fichiers partagés entre toutes les variantes du véhicule.
-- **Sous-dossiers dans `repaints/`** : Vous pouvez créer des sous-dossiers pour organiser les livrées par véhicule.
-- **Cohérence** : Respectez la même convention de nommage pour tous les fichiers et variables.
-- **Taille des images** : Les images doivent être des puissances de 2, c'est-à-dire 16x16, 32x32, 64x64, 256x256, 512x512, 1024x1024, 2048x2048 (max)
+## Version History
+To maintain a written record of each version outside the public version manuals, it is mandatory to document the changes between versions in the `CHANGELOG.md` and `CHANGELOG_FR.md` files.
+
+The format should follow [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), using the versioning semantics of [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## Best Practices
+- **`common/` Folders**: Only contain files shared among all vehicle variants.
+- **Subfolders in `repaints/`**: You can create subfolders to organize liveries by vehicle.
+- **Consistency**: Follow the same naming convention for all files and variables.
+- **Images size** : Images must be powers of 2, i.e. 16x16, 32x32, 64x64, 256x256, 512x512, 1024x1024, 2048x2048 (max).
