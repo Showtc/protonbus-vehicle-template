@@ -62,7 +62,7 @@ jobs:
 
             ## Changelog
             ${{ steps.changelog.outputs.changelog }}
-          files: release.zip
+          files: protonbus-vehicle-template_${{ github.ref_name }}.zip
           draft: false
           prerelease: false
         env:
