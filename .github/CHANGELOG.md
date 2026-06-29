@@ -1,13 +1,13 @@
 ## Ce qui a changé
-- Changement des commentaire et du style pour `lights.txt`.
-- Passage en anglais pour `README.md`.
-- Ajout du fichier `README_FR.md` afin de garder un readme en français.
-- Ajout dans `README.md` et `README_FR.md` une documentation sur l'historique des versions.
-- Ajout des fichiers `CHANGELOG.md` et `CHANGELOG_FR.md` dans `content_info/` afin d'avoir une trace écrite des versions publiques et de développement.
+- Modification des README avec la modification d'emplacement des fichiers, et nouvelles explications.
+- Déplacement des fichiers de configuration sons `sounds_motor_name.txt` et configuration 3D du véhicule avec les animations du tableau de bord `model_vehicle.txt`, dans le dossier racine.
+- Modification des noms de fichiers pour les fichiers des portes en suivant la nomenclature.
+- Suppression des coordonées pour les portes 2 et 3, car non nécessaires. Ces coordonnées sont utilisées pour les portes d'entrée.
+- Modification des noms d'exemple dans `sounds_motor_name.txt`.
 
 ## What's Changed
-- Update comments and style for `lights.txt`.
-- Transition into english for `README.md`.
-- Add `README_FR.md` in order to keep a french readme.
-- Add in `README.md` and `README_FR.md` a documentation for version history.
-- Add `CHANGELOG.md` and `CHANGELOG_FR.md` files in `content_info/` to maintain a written record of public and development versions.
+- Updated the README files, including file locations and new explanations.
+- Moved the sound configuration file `sounds_motor_name.txt` and the 3D vehicle configuration file with dashboard animations `model_vehicle.txt` to the root folder.
+- Changed the filenames for the door files to match the naming convention.
+- Removed the coordinates for doors 2 and 3, as they are no longer needed. These coordinates are used for the entry doors.
+- Changed the example filenames in `sounds_motor_name.txt`.
