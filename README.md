@@ -6,7 +6,7 @@ Une version française est disponible ici : [README_FR.md](README_FR.md)
 ---
 
 ## Important
-**Delete `.gitkeep` files**: These files are only present to force Git to track empty directories. They should not be included in your final project.
+Delete `.gitkeep` files: These files are only present to force Git to track empty directories. They should not be included in your final project.
 
 ---
 
@@ -25,7 +25,6 @@ Here is the directory and file tree of the repository:
 │   │   └── CHANGELOG_FR.md
 │   │   └── thumbnails
 │   ├── models
-│   │   ├── Brand_type.txt
 │   │   └── common
 │   ├── repaints
 │   ├── resources
@@ -34,9 +33,9 @@ Here is the directory and file tree of the repository:
 │   │   └── templates
 │   ├── scripts
 │   │   ├── doors
-│   │   │   ├── rightdoor1.txt
-│   │   │   ├── rightdoor2.txt
-│   │   │   └── rightdoor3.txt
+│   │   │   ├── right_door_1.txt
+│   │   │   ├── right_door_2.txt
+│   │   │   └── right_door_3.txt
 │   │   ├── physics
 │   │   │   └── physics_Voith_euro2.txt
 │   │   ├── lights
@@ -47,9 +46,10 @@ Here is the directory and file tree of the repository:
 │   │   ├── MIDR_06-20-45
 │   │   ├── common
 │   │   ├── compressor
-│   │   ├── doors
-│   │   └── sounds.txt
-│   └── textures
+│   │   └── doors
+│   ├── textures
+│   ├── model_vehicle.txt
+│   └── sounds_motor_name.txt
 └── Vehicle_solo_configuration.ini
 ```
 
@@ -58,31 +58,31 @@ Here is the directory and file tree of the repository:
 | Folder/File | Description |
 |-------------|-------------|
 | `Vehicle_solo_configuration.ini` / `Vehicle_articulated_configuration.ini` | Configuration files defining mandatory parameters for vehicle views and physics. |
-| `Vehicle_folder/` | Root folder for the vehicle. |
+| `Vehicle_folder/` | Root folder for the vehicle, with audio configuration and of the vehicule with tachometer animation, speed. |
 | `content_info/` | Contains additional metadata for the vehicle. |
 | `content_info/CHANGELOG.md` / `content_info/CHANGELOG_FR.md` | Changelog between each versions, public and development. |
 | `content_info/thumbnails/` | Thumbnails used for previews (`preview`) in configuration files. |
-| `models/` | 3D models of the vehicle and associated configuration files (e.g., tachometer animation, speed). |
+| `models/` | 3D models of the vehicle. |
 | `repaints/` | Custom liveries for the vehicle. |
 | `resources/` | User resources (templates, etc.). *Note: Ago'Projects does not use this folder for vehicle manuals.* |
+| `resources/dev_files/` | Developement files as `.blend` (Blender) files used. |
+| `resources/dev_files/requirements.text` | A file that allows the user to know what the minimum version of Blender to use is, or other software. |
 | `scripts/` | Main logic of the vehicle (doors, gearboxes, lighting, wheels, etc.). |
 | `sounds/` | Vehicle sounds and audio configuration files. |
 | `textures/` | Vehicle textures. |
-| `textures/_dev_files/` | Development files such as `.blend` files (Blender) used. |
-| `textures/_dev_files/requirements.txt` | File informing the user about the minimum required version of Blender or other software. |
 
 ## Nomenclature
 
 ### General Rules
-- **Allowed Characters**: Use only ASCII characters (A-Z, a-z, 0-9, `_`, `-`).
-- **Encoding**: All files must be encoded in **UTF-8**.
-- **Case**: File and folder names must be in **lowercase**, with `_` (underscores) replacing spaces.
-- **Dots**: Replace `.` with `-` (e.g., `MIDR_06-20-45`).
-- **Snake Case**: Use `snake_case` for file and variable names, except for brand names (e.g., `floor_e5.png`, or in the case of a brand `Hanover_EG3`).
-- **Nom des fichiers et des variables** : Only in english
+- Allowed Characters: Use only ASCII characters (A-Z, a-z, 0-9, `_`, `-`).
+- Encoding: All files must be encoded in UTF-8.
+- Case: File and folder names must be in lowercase, with `_` (underscores) replacing spaces.
+- Dots: Replace `.` with `-` (e.g., `MIDR_06-20-45`).
+- Snake Case: Use `snake_case` for file and variable names, except for brand names (e.g., `floor_e5.png`, or in the case of a brand `Hanover_EG3`).
+- Nom des fichiers et des variables : Only in english
 
 ### Naming Example
-For textures of a part like the **Hanover EG3** unit, use a common prefix to group files:
+For textures of a part like the Hanover EG3 unit, use a common prefix to group files:
 - `Hanover_EG3.png`
 - `Hanover_EG3_buttons.png`
 - `Hanover_EG3_buttons_on.png`
@@ -93,7 +93,7 @@ To maintain a written record of each version outside the public version manuals,
 The format should follow [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), using the versioning semantics of [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Best Practices
-- **`common/` Folders**: Only contain files shared among all vehicle variants.
-- **Subfolders in `repaints/`**: You can create subfolders to organize liveries by vehicle.
-- **Consistency**: Follow the same naming convention for all files and variables.
-- **Images size** : Images must be powers of 2, i.e. 16x16, 32x32, 64x64, 256x256, 512x512, 1024x1024, 2048x2048 (max).
+- `common/` Folders: Only contain files shared among all vehicle variants.
+- Subfolders in `repaints/`: You can create subfolders to organize liveries by vehicle.
+- Consistency: Follow the same naming convention for all files and variables.
+- Images size : Images must be powers of 2, i.e. 16x16, 32x32, 64x64, 256x256, 512x512, 1024x1024, 2048x2048 (max).
