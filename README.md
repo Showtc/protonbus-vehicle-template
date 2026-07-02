@@ -58,11 +58,11 @@ Here is the directory and file tree of the repository:
 | Folder/File | Description |
 |-------------|-------------|
 | `Vehicle_solo_configuration.ini` / `Vehicle_articulated_configuration.ini` | Configuration files defining mandatory parameters for vehicle views and physics. |
-| `Vehicle_folder/` | Root folder for the vehicle, with audio configuration and of the vehicule with tachometer animation, speed. |
+| `Vehicle_folder/` | Root folder for the vehicle. |
 | `content_info/` | Contains additional metadata for the vehicle. |
 | `content_info/CHANGELOG.md` / `content_info/CHANGELOG_FR.md` | Changelog between each versions, public and development. |
 | `content_info/thumbnails/` | Thumbnails used for previews (`preview`) in configuration files. |
-| `models/` | 3D models of the vehicle. |
+| `models/` | 3D models of the vehicle, and vehicle configuration files with tachometer animation, speed. |
 | `repaints/` | Custom liveries for the vehicle. |
 | `resources/` | User resources (templates, etc.). *Note: Ago'Projects does not use this folder for vehicle manuals.* |
 | `resources/dev_files/` | Developement files as `.blend` (Blender) files used. |
@@ -70,6 +70,8 @@ Here is the directory and file tree of the repository:
 | `scripts/` | Main logic of the vehicle (doors, gearboxes, lighting, wheels, etc.). |
 | `sounds/` | Vehicle sounds and audio configuration files. |
 | `textures/` | Vehicle textures. |
+
+Note for sounds and models files, you need to put the whole path from the root folder. Hence why you will see `sounds/` and `models/` even if configuration files are in those folders.
 
 ## Nomenclature
 
