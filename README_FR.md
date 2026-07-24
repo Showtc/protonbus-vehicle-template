@@ -78,9 +78,7 @@ Note pour les fichiers de configuration des sons et des modèles 3D, vous devez 
 ### Règles générales
 - Caractères autorisés : Utilisez uniquement des caractères ASCII (A-Z, a-z, 0-9, `_`, `-`).
 - Encodage : Tous les fichiers doivent être encodés en UTF-8.
-- Casse : Les noms de fichiers et dossiers doivent être en minuscules, avec des `_` (underscores) pour remplacer les espaces.
-- Points : Remplacez les `.` par des `-` (ex : `MIDR_06-20-45`).
-- Snake case : Utilisez le `snake_case` pour les noms de fichiers et variables, sauf pour les noms de marques (ex : `floor_e5.png`, ou dans le cas d'une marque `Hanover_EG3.png`)
+- Snake case : Utilisez le `snake_case` pour les noms de fichiers et variables
 - Nom des fichiers et des variables : Uniquement en anglais
 
 ### Exemple de nommage

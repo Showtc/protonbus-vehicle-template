@@ -76,12 +76,10 @@ Note for sounds and models files, you need to put the whole path from the root f
 ## Nomenclature
 
 ### General Rules
-- Allowed Characters: Use only ASCII characters (A-Z, a-z, 0-9, `_`, `-`).
-- Encoding: All files must be encoded in UTF-8.
-- Case: File and folder names must be in lowercase, with `_` (underscores) replacing spaces.
-- Dots: Replace `.` with `-` (e.g., `MIDR_06-20-45`).
-- Snake Case: Use `snake_case` for file and variable names, except for brand names (e.g., `floor_e5.png`, or in the case of a brand `Hanover_EG3`).
-- Nom des fichiers et des variables : Only in english
+- Allowed Characters: Use only ASCII characters (A-Z, a-z, 0-9, `_`, `-`)
+- Encoding: All files must be encoded in UTF-8
+- Snake Case: Use `snake_case` for file and variable names
+- Files names and variables: Only in english
 
 ### Naming Example
 For textures of a part like the Hanover EG3 unit, use a common prefix to group files:
