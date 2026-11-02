@@ -1,7 +1,5 @@
 ## Ce qui a changé
-- Modification des README pour la norme des noms, utilisant seulement le snake case
-- Passage en snake case
+- Modification du README ajoutant la localisation du fichier LICENSE et modification de la présence des manuels
 
 ## What's Changed
-- Updated the README files for files names and variables, using only snake case
-- Switch to snake case
+- Updated the README files adding the location of the LICENSE file and update where are manuals
