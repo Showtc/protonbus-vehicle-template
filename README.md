@@ -59,12 +59,12 @@ Here is the directory and file tree of the repository:
 |-------------|-------------|
 | `Vehicle_solo_configuration.ini` / `Vehicle_articulated_configuration.ini` | Configuration files defining mandatory parameters for vehicle views and physics. |
 | `Vehicle_folder/` | Root folder for the vehicle. |
-| `content_info/` | Contains additional metadata for the vehicle. |
+| `content_info/` | Contains additional metadata for the vehicle, with the LICENSE file. |
 | `content_info/CHANGELOG.md` / `content_info/CHANGELOG_FR.md` | Changelog between each versions, public and development. |
 | `content_info/thumbnails/` | Thumbnails used for previews (`preview`) in configuration files. |
 | `models/` | 3D models of the vehicle, and vehicle configuration files with tachometer animation, speed. |
 | `repaints/` | Custom liveries for the vehicle. |
-| `resources/` | User resources (templates, etc.). *Note: Ago'Projects does not use this folder for vehicle manuals.* |
+| `resources/` | User resources (templates, manuals, etc.). |
 | `resources/dev_files/` | Developement files as `.blend` (Blender) files used. |
 | `resources/dev_files/requirements.text` | A file that allows the user to know what the minimum version of Blender to use is, or other software. |
 | `scripts/` | Main logic of the vehicle (doors, gearboxes, lighting, wheels, etc.). |

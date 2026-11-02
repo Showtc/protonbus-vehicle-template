@@ -59,12 +59,12 @@ Voici l’arbre des dossiers et fichiers du dépôt :
 |-----------------|-------------|
 | `Vehicle_solo_configuration.ini` / `Vehicle_articulated_configuration.ini` | Fichiers de configuration définissant les paramètres obligatoires pour les vues et la physique du véhicule. |
 | `Vehicle_folder/` | Dossier racine du véhicule. |
-| `content_info/` | Contient les métadonnées supplémentaires du véhicule. |
+| `content_info/` | Contient les métadonnées supplémentaires du véhicule, avec le fichier LICENSE. |
 | `content_info/CHANGELOG.md` / `content_info/CHANGELOG_FR.md` | Journal des modifications entre chaque version publique et de développement. |
 | `content_info/thumbnails/` | Miniatures utilisées pour les aperçus (`preview`) dans les fichiers de configuration. |
 | `models/` | Modèles 3D du véhicule, et les fichiers de configuration des véhicules avec l'animation du compte-tours, vitesse. |
 | `repaints/` | Livrées personnalisées pour le véhicule. |
-| `resources/` | Ressources utilisateur (templates, etc.). *Note : Ago'Projects n’utilise pas ce dossier pour les manuels des véhicules.* |
+| `resources/` | Ressources utilisateur (templates, manuels, etc.). |
 | `resources/dev_files/` | Fichiers de développement comme les fichiers `.blend` (Blender) utilisés. |
 | `resources/dev_files/requirements.text` | Fichier permettant à l'utilisateur de savoir quelle est la version minimale de Blender à utiliser, ou bien d'autres logiciels. |
 | `scripts/` | Logique principale du véhicule (portes, boîtes de vitesses, éclairages, roues, etc.). |
